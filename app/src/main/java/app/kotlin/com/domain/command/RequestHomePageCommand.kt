@@ -7,9 +7,9 @@ import app.kotlin.com.request.HomePageRequest
 /**
  * Created by lzrui on 18-3-3.
  */
-class RequestHomePageCommand(val curPage : Int) : Command<HomePage>{
-    override fun excute(): HomePage {
+class RequestHomePageCommand(private val curPage : Int) : Command<HomePage>{
+    override fun execute(): HomePage {
         return HomePageDataMapper()
-                .convertResponseDataToModel(HomePageRequest(curPage).excute())
+                .convertResponseDataToModel(HomePageRequest(curPage).execute())
     }
 }

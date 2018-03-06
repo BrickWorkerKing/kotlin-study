@@ -9,11 +9,6 @@ package app.kotlin.com.util
  */
 
 /**
- * 首页banner url
- */
-val HOME_PAGE_BANNER_URL: String = "http://www.wanandroid.com/banner/json"
-
-/**
  * 常用网站
  */
 val FRIEND_URL: String = "http://www.wanandroid.com/friend/json"

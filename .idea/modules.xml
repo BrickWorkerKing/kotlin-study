@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kotlinstudy.iml" filepath="$PROJECT_DIR$/kotlinstudy.iml" />
+      <module fileurl="file://E:\code\android\kotlin-study\app\app.iml" filepath="E:\code\android\kotlin-study\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kotlin-study.iml" filepath="$PROJECT_DIR$/kotlin-study.iml" />
+      <module fileurl="file://E:\code\android\kotlin-study\kotlinstudy.iml" filepath="E:\code\android\kotlin-study\kotlinstudy.iml" />
     </modules>
   </component>
 </project>

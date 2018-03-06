@@ -19,7 +19,7 @@ class HomePageRequest(val curPage: Int) : BaseRequest<HomePageResponse> {
         private val URL_END = "/json"
     }
 
-    override fun excute(): HomePageResponse {
+    override fun execute(): HomePageResponse {
         val jsonStr: String = URL(HTTP_URL + curPage + URL_END).readText()
         log("home page json: " + jsonStr)
         return Gson().fromJson(jsonStr, HomePageResponse::class.java)

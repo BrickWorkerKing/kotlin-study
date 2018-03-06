@@ -8,5 +8,5 @@ package app.kotlin.com.domain.command
  * @date 2018/3/2 0002
  */
 interface Command<out T> {
-    fun excute(): T
+    fun execute(): T
 }
