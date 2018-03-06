@@ -3,5 +3,20 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="blackFont">#333333</color>
+    <color name="colorBlackFont">#333333</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWindowBg">#fdfdfd</color>
+    <color name="colorGrayLine">#cccccc</color>
+
+    <color name="colorHotFlag0">#cd4f8e</color>
+    <color name="colorHotFlag1">#c98de5</color>
+    <color name="colorHotFlag2">#a5faff</color>
+    <color name="colorHotFlag3">#5e6c91</color>
+    <color name="colorHotFlag4">#88d3be</color>
+    <color name="colorHotFlag5">#a7b2ae</color>
+    <color name="colorHotFlag6">#a1b987</color>
+    <color name="colorHotFlag7">#8777b5</color>
+    <color name="colorHotFlag8">#61625d</color>
+    <color name="colorHotFlag9">#dd89ab</color>
+
 </resources>

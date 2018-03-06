@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:textColor="@color/blackFont"
+            android:textColor="@color/colorBlackFont"
             android:textSize="18sp"
             tools:text="I am title" />
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:textColor="@color/blackFont"
+            android:textColor="@color/colorBlackFont"
             android:textSize="14sp"
             tools:text="2018-01-01" />
 

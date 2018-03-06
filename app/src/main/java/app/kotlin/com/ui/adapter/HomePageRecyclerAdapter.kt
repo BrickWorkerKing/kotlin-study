@@ -41,7 +41,7 @@ class HomePageRecyclerAdapter(private val items: List<HomePageItem>?, private va
 
             with(itemData) {
                 itemView.tvTitle.text = title
-                itemView.tvKey.text = java.lang.String.format("key: %s", key)
+                itemView.tvKey.text = java.lang.String.format("关键字: %s", key)
                 itemView.tvDateTime.text = dateTime
 
                 itemView.setOnClickListener {

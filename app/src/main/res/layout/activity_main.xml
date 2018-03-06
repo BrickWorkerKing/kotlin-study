@@ -6,6 +6,8 @@
     android:orientation="vertical"
     tools:context="app.kotlin.com.ui.activity.MainActivity">
 
+    <include layout="@layout/common_title_view" />
+
     <com.youth.banner.Banner
         android:id="@+id/homeBanner"
         android:layout_width="match_parent"
@@ -14,6 +16,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/homePageRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:listitem="@layout/home_page_recycler_item" />
 
 </LinearLayout>

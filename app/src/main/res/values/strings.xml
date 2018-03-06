@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">kotlin study</string>
-    <string name="key_word">key: %1$s</string>
+    <string name="app_name">学Android</string>
+
+    <string name="title_hot">Hot</string>
+
+    <string name="friend_website">常用网站</string>
+    <string name="hot_key">大家都在搜</string>
+
+
+    <string name="menu_search">Search</string>
+    <string name="menu_hot">Hot</string>
 </resources>

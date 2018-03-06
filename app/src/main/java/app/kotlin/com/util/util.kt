@@ -18,3 +18,8 @@ fun Context.toast(msg: CharSequence) {
 fun log(msg: String) {
     Log.i("kotlin_log", msg)
 }
+
+inline fun consume(f: () -> Unit): Boolean {
+    f()
+    return true
+}

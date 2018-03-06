@@ -1,18 +1,5 @@
 package app.kotlin.com.util
 
-
-/**
- *
- * URL地址
- * @author ZXW_LZR
- * @date 2018/3/2 0002
- */
-
-/**
- * 常用网站
- */
-val FRIEND_URL: String = "http://www.wanandroid.com/friend/json"
-
 /**
  * 搜索热词
  */
