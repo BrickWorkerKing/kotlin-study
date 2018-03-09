@@ -2,9 +2,13 @@ package app.kotlin.com.ui.activity
 
 import app.kotlin.com.R
 import app.kotlin.com.domain.command.FriendWebsiteCommand
+import app.kotlin.com.domain.command.HotkeyCommand
 import app.kotlin.com.domain.model.FriendWebsite
 import app.kotlin.com.domain.model.FriendWebsiteItem
-import app.kotlin.com.ui.adapter.HotTagFlowAdapter
+import app.kotlin.com.domain.model.HotKey
+import app.kotlin.com.domain.model.HotKeyItem
+import app.kotlin.com.ui.adapter.FriendWebsiteTagFlowAdapter
+import app.kotlin.com.ui.adapter.HotKeyTagFlowAdapter
 import app.kotlin.com.util.consume
 import app.kotlin.com.util.toast
 import kotlinx.android.synthetic.main.activity_hot.*
@@ -22,6 +26,7 @@ import org.jetbrains.anko.uiThread
 class HotActivity : BaseActivity() {
 
     private var friendList: List<FriendWebsiteItem>? = null
+    private var hotKeyList: List<HotKeyItem>? = null
 
     override fun getContentView(): Int = R.layout.activity_hot
 
@@ -34,6 +39,12 @@ class HotActivity : BaseActivity() {
                 toast("link == " + link)
             }
         }
+        hotKeyFlowLayout.setOnTagClickListener { view, position, parent ->
+            consume {
+                val name : String? = hotKeyList?.get(position)?.name
+                toast(" hot key : " + name)
+            }
+        }
     }
 
     override fun initData() {
@@ -41,14 +52,15 @@ class HotActivity : BaseActivity() {
             val friendWebsiteModel: FriendWebsite = FriendWebsiteCommand().execute()
             friendList = friendWebsiteModel.items
             uiThread {
-                friendFlowLayout.adapter = HotTagFlowAdapter(friendWebsiteModel.items)
+                friendFlowLayout.adapter = FriendWebsiteTagFlowAdapter(friendWebsiteModel.items)
             }
         }
 
         doAsync {
-
+            val hotKeyModel: HotKey = HotkeyCommand().execute()
+            hotKeyList = hotKeyModel.items
             uiThread {
-                //                hotKeyFlowLayout.adapter = HotTagFlowAdapter()
+                hotKeyFlowLayout.adapter = HotKeyTagFlowAdapter(hotKeyModel.items)
             }
         }
     }

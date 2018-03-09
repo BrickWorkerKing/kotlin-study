@@ -11,7 +11,7 @@ import app.kotlin.com.request.HomeBannerRequest
  * @author ZXW_LZR
  * @date 2018/3/5 0005
  */
-class RequestHomeBannerCommand : Command<HomeBanner> {
+class RequestHomeBannerCommand : BaseCommand<HomeBanner> {
 
     override fun execute(): HomeBanner {
         val responseData = HomeBannerRequest().execute()

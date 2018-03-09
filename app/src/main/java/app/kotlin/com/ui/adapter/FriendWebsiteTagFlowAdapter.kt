@@ -18,7 +18,7 @@ import org.jetbrains.anko.textColor
  * @author ZXW_LZR
  * @date 2018/3/6 0006
  */
-class HotTagFlowAdapter(items: List<FriendWebsiteItem>) : TagAdapter<FriendWebsiteItem>(items) {
+class FriendWebsiteTagFlowAdapter(items: List<FriendWebsiteItem>) : TagAdapter<FriendWebsiteItem>(items) {
 
     companion object {
         private val textColors: List<Int> = listOf(
@@ -36,9 +36,9 @@ class HotTagFlowAdapter(items: List<FriendWebsiteItem>) : TagAdapter<FriendWebsi
     }
 
     override fun getView(parent: FlowLayout?, position: Int, t: FriendWebsiteItem?): View {
-        val flagView = LayoutInflater.from(parent?.context).inflate(R.layout.hot_flag_flow_item, parent, false)
+        val flagView = LayoutInflater.from(parent?.context)
+                .inflate(R.layout.hot_flag_flow_item, parent, false)
         val tvFlag: TextView = flagView.find(R.id.tvFlag)
-        tvFlag.textColor = R.color.colorPrimaryDark
         tvFlag.text = t?.name
         tvFlag.textColor = ContextCompat.getColor(parent?.context, textColors[position % 10])
         return flagView
